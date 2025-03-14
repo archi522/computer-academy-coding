@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+
+int main(void)
+{
+	int n;
+	int b;
+	int c;
+
+	scanf("%d", &n);
+	for (int i = 0; i < n; i++)
+	{
+		for (b = i; b < n; b++) {
+			printf(" ");
+		}
+		for (c = 0; c <= (i * 2); c++) {
+			printf("*");
+		}
+		printf("\n");
+	}
+
+	for (int i = n; i > 0; i--)
+	{
+		for (b = i; b <= n; b++) {
+			printf(" ");
+		}
+
+		for (c = 0; c <= ((i - 1) * 2); c++) {
+			printf("*");
+		}
+
+		printf("\n");
+	}
+
+
+
+	return 0;
+}
